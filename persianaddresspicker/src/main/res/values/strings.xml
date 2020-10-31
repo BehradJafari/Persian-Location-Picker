@@ -25,5 +25,6 @@
     <string name="error_field">لطفا موارد بالا را پر کنید</string>
     <string name="where_are_you">کجا هستید؟</string>
     <string name="address_search">مثل ونک ، آزادی و…</string>
+    <string name="address_name">نام آدرس</string>
 
 </resources>

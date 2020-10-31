@@ -38,6 +38,9 @@ public class MapPresenter
         data.putExtra(activity.getString(R.string.location_searched), location);
 
 
+        location.getLocation().setX(activity.mMap.getCameraPosition().target.latitude);
+        location.getLocation().setY(activity.mMap.getCameraPosition().target.longitude);
+
         activity.setResult(RESULT_OK, data);
         activity.finish();
 
@@ -86,7 +89,7 @@ public class MapPresenter
                 }
                 else {
 
-                    activity.hint_title = activity.getString(R.string.hint_info);
+                    activity.hint_title = activity.getString(R.string.hint_title);
                 }
 
 
@@ -200,6 +203,24 @@ public class MapPresenter
                 else {
 
                     activity.search_alley = activity.getString(R.string.search_alley);
+                }
+
+
+
+
+                //endregion
+
+                //region dialog top title
+
+
+                if (extras.containsKey(activity.getString(R.string.address_name))){
+
+                    activity.dialog_string = extras.getString(activity.getString(R.string.address_name));
+
+                }
+                else {
+
+                    activity.search_alley = activity.getString(R.string.address_name);
                 }
 
 

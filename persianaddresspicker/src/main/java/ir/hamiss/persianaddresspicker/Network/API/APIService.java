@@ -10,7 +10,8 @@ package ir.hamiss.persianaddresspicker.Network.API;
 import java.util.concurrent.TimeUnit;
 
 
-import ir.hamiss.persianaddresspicker.GLOBAL;
+
+
 import ir.hamiss.persianaddresspicker.R;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -65,7 +66,7 @@ public class APIService {
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient.build())
 
-                    .baseUrl(GLOBAL.context.getString(R.string.server));
+                    .baseUrl("https://hamiss.ir");
 
 
 

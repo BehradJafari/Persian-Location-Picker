@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 
@@ -30,6 +31,7 @@ public class AlertDialogAddress extends Dialog {
     public EditText detail_et;
     public TextInputLayout name;
     public TextInputLayout detail;
+    public TextView title;
 
 
     public AlertDialogAddress(Activity a) {
@@ -54,6 +56,7 @@ public class AlertDialogAddress extends Dialog {
         detail_et = findViewById(R.id.detail_et);
         name = findViewById(R.id.name);
         detail = findViewById(R.id.detail);
+        title = findViewById(R.id.top_tv);
 
         findViewById(R.id.close_im).setOnClickListener(v ->{
             this.dismiss();

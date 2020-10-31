@@ -46,14 +46,15 @@ public class MainActivity extends AppCompatActivity {
     public void get_loc(View view) {
         AddressPickerBuilder.getInstance()
                 .setDrawable_src(R.drawable.location_placeholder)
-                .setEnable_info(true)
-                .setHint_info("jsj")
+                .setEnable_info(false)
+
                 .setHint_title("fdfs")
+                .setDialog_string("تایتل")
                 .setNeshan_api_key("service.zVh8wVLrTTqGuVBCS5ETDeOYcVHtsdS189aF5V6Y")
                 .setRequest_code(123)
-                .setSearch_alley("جستجو اسمی")
+                .setSearch_alley("جستجو محله")
 
-                .setZoom_map(10)
+                .setZoom_map(17)
                 .build(this);
     }
 

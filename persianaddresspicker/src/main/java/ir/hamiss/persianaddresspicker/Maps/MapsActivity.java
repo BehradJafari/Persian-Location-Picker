@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -51,7 +52,7 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
-import ir.hamiss.persianaddresspicker.GLOBAL;
+
 import ir.hamiss.persianaddresspicker.Modul.AlertDialogAddress;
 import ir.hamiss.persianaddresspicker.Modul.SearchItem;
 import ir.hamiss.persianaddresspicker.R;
@@ -74,7 +75,8 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
     ImageView center_img;
 
-    private GoogleMap mMap;
+
+    GoogleMap mMap;
     LocationRequest mLocationRequest;
     GoogleApiClient mGoogleApiClient;
     SearchItem place = new SearchItem();
@@ -128,6 +130,9 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
     String search_alley;
 
 
+
+    //address title dialog
+     String dialog_string;
 
 
 
@@ -516,6 +521,8 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
         dialogAddress.name.setHint(hint_title);
+        dialogAddress.title.setText(dialog_string);
+
 
 
         if (enable_info) {
@@ -527,6 +534,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
         }
 
 
+
         dialogAddress.yes_btn.setOnClickListener(v -> {
 
             if (dialogAddress.name_et.getText().toString().trim().isEmpty()
@@ -534,19 +542,19 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
             ) {
 
-                GLOBAL.toast(empty_field);
+                toast(empty_field);
             } else {
 
                 if (enable_info && dialogAddress.detail_et.getText().toString().trim().isEmpty()) {
-                    GLOBAL.toast(empty_field);
+                    toast(empty_field);
 
                     return;
                 }
 
                 dialogAddress.dismiss();
                 presenter.address_add(dialogAddress.name_et.getText().toString(), dialogAddress.detail_et.getText().toString(), place, this);
-//
-//
+
+
 
 
             }
@@ -555,6 +563,10 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
         });
 
 
+    }
+
+    private void toast(String empty_field) {
+        Toast.makeText(this,empty_field,Toast.LENGTH_SHORT).show();
     }
 
 

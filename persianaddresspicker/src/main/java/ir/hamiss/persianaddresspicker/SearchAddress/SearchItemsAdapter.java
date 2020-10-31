@@ -20,7 +20,8 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
 
-import ir.hamiss.persianaddresspicker.GLOBAL;
+
+
 import ir.hamiss.persianaddresspicker.Modul.SearchItem;
 import ir.hamiss.persianaddresspicker.R;
 
@@ -29,7 +30,8 @@ public class SearchItemsAdapter extends RecyclerView.Adapter<SearchItemsAdapter.
     Context context;
     CompositeDisposable bag = new CompositeDisposable();
     BehaviorRelay<ArrayList<SearchItem>> versionModels = BehaviorRelay.createDefault(new ArrayList<SearchItem>());
-    int width;
+
+
 
     {
         versionModels.observeOn(AndroidSchedulers.mainThread())
@@ -61,7 +63,8 @@ public class SearchItemsAdapter extends RecyclerView.Adapter<SearchItemsAdapter.
     public SearchItemsAdapter(Context context) {
         this.context = context;
 
-        width = GLOBAL.screenWidth(1,1);
+
+
 
 
     }

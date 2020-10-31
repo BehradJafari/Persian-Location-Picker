@@ -4,7 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 
-import ir.hamiss.persianaddresspicker.GLOBAL;
+
+
 import ir.hamiss.persianaddresspicker.Maps.MapsActivity;
 import ir.hamiss.persianaddresspicker.R;
 
@@ -60,6 +61,11 @@ public class AddressPickerBuilder {
     private String empty_field;
 
 
+    //address title dialog
+    private String dialog_string;
+
+
+
     //typeFace
     private Typeface tf;
 
@@ -76,6 +82,11 @@ public class AddressPickerBuilder {
 
     //
 
+
+    public AddressPickerBuilder setDialog_string(String dialog_string) {
+        this.dialog_string = dialog_string;
+        return this;
+    }
 
     public AddressPickerBuilder setEnable_info(boolean enable_info) {
         this.enable_info = enable_info;
@@ -136,21 +147,22 @@ public class AddressPickerBuilder {
         Intent i = new Intent(activity, MapsActivity.class);
 
 
-        set_extra(R.string.hint_title,hint_title,i);
-        set_extra(R.string.hint_info,hint_info,i);
-        set_extra(R.string.api_key,neshan_api_key,i);
-        set_extra(R.string.hint_title,hint_title,i);
+        set_extra(R.string.hint_title,hint_title,i,activity);
+        set_extra(R.string.hint_info,hint_info,i,activity);
+        set_extra(R.string.api_key,neshan_api_key,i,activity);
+        set_extra(R.string.hint_title,hint_title,i,activity);
 
-        set_extra(R.string.map_zoom,zoom_map,i);
-        set_extra(R.string.drawable_int,drawable_src,i);
+        set_extra(R.string.map_zoom,zoom_map,i,activity);
+        set_extra(R.string.drawable_int,drawable_src,i,activity);
 
-        set_extra(R.string.start_lat,start_latitude,i);
-        set_extra(R.string.start_lng,start_longitude,i);
+        set_extra(R.string.start_lat,start_latitude,i,activity);
+        set_extra(R.string.start_lng,start_longitude,i,activity);
 
-        set_extra(R.string.enable_info,enable_info,i);
+        set_extra(R.string.enable_info,enable_info,i,activity);
 
-        set_extra(R.string.search_alley,search_alley,i);
-        set_extra(R.string.search_alley_drawable,search_alley_drawable,i);
+        set_extra(R.string.search_alley,search_alley,i,activity);
+        set_extra(R.string.search_alley_drawable,search_alley_drawable,i,activity);
+        set_extra(R.string.address_name,dialog_string,i,activity);
 
 
 
@@ -163,26 +175,26 @@ public class AddressPickerBuilder {
         activity.startActivityForResult(i,request_code);
     }
 
-    private void set_extra(int string , String put,Intent i){
+    private void set_extra(int string , String put,Intent i,Activity activity){
         if (put!=null){
-            i.putExtra(GLOBAL.context.getString(string),put);
+            i.putExtra(activity.getString(string),put);
         }
     }
-    private void set_extra(int string , int put,Intent i){
+    private void set_extra(int string , int put,Intent i,Activity activity){
 
-            i.putExtra(GLOBAL.context.getString(string),put);
+            i.putExtra(activity.getString(string),put);
 
 
     }
 
-    private void set_extra(int string , double put,Intent i){
+    private void set_extra(int string , double put,Intent i,Activity activity){
 
-        i.putExtra(GLOBAL.context.getString(string),put);
+        i.putExtra(activity.getString(string),put);
     }
 
-    private void set_extra(int string , boolean put,Intent i){
+    private void set_extra(int string , boolean put,Intent i,Activity activity){
 
-        i.putExtra(GLOBAL.context.getString(string),put);
+        i.putExtra(activity.getString(string),put);
     }
 
 

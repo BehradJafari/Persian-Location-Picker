@@ -28,7 +28,8 @@
             android:src="@drawable/ic_action_close_red"
             android:layout_alignParentTop="true"
 
-            android:layout_margin="10sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginTop="10sp"
             android:layout_alignParentRight="true" />
 
 
@@ -38,8 +39,10 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/close_im"
-            android:text="@string/address_detail"
+            android:text="@string/address_name"
             style="@style/info_styles_black"
+            android:layout_marginTop="-10dp"
+            android:textStyle="bold"
             />
 
 
