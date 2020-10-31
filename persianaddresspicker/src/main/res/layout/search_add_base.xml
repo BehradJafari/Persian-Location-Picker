@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="2dp"
+    android:layout_marginTop="2dp"
+
+
+    >
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/info_styles_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/default_margin"
+
+        android:layout_toLeftOf="@+id/icon_iv"
+
+
+
+        android:layout_marginTop="@dimen/default_margin"
+
+
+        android:background="@null"
+        android:text="@string/address_detail"
+
+        android:inputType="textMultiLine"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/address_tv"
+        style="@style/info_styles_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/title_tv"
+
+
+
+
+
+        android:layout_marginTop="@dimen/default_margin"
+
+
+
+        android:layout_marginBottom="@dimen/default_margin"
+        android:background="@null"
+        android:inputType="textMultiLine"
+        android:layout_marginRight="@dimen/default_margin"
+
+        android:layout_toLeftOf="@+id/icon_iv"
+        android:textColor="@color/text_light"
+        android:textSize="14sp"
+        android:text="@string/address_detail"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/address_tv"
+
+
+
+        android:layout_marginRight="0dp"
+
+        android:layout_toLeftOf="@+id/icon_iv"
+        android:background="@color/text_light" />
+
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/place"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_margin"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PersianAddressPicker</string>
+    <string name="server">https://hamiss.ir</string>
+    <string name="search">برای جستجو ضربه بزنید</string>
+    <string name="address_detail">جزئیات آدرس</string>
+    <string name="search_on_map">جستجو آدرس</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="hint_title">نام آدرس</string>
+    <string name="hint_info">جزئیات آدرس</string>
+    <string name="start_lng">طول جغرافیایی مبدا</string>
+    <string name="start_lat">عرض جغرافیایی مبدا</string>
+    <string name="api_key">کلید توسعه دهنده</string>
+    <string name="drawable_int">ادرس لوگو</string>
+    <string name="request_code">عدد درخواست</string>
+    <string name="map_zoom">میزان بزرگنمایی</string>
+    <string name="enable_info">با جزئیات</string>
+    <string name="search_alley">جستجو محله</string>
+    <string name="search_alley_drawable">آیکون جستجو محله</string>
+    <string name="location_searched">مکان ثبت شده</string>
+
+    <string name="font">فونت</string>
+
+    <string name="error_field">لطفا موارد بالا را پر کنید</string>
+    <string name="where_are_you">کجا هستید؟</string>
+    <string name="address_search">مثل ونک ، آزادی و…</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="480"
+    android:viewportHeight="480">
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M61,453h80c5.5,0,10-4.5,10-10v-80c0-5.5-4.5-10-10-10H61c-5.5,0-10,4.5-10,10v80C51,448.5,55.5,453,61,453z M71,373h60v60 H71V373z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M185,453h80c5.5,0,10-4.5,10-10v-80c0-5.5-4.5-10-10-10h-80c-5.5,0-10,4.5-10,10v80C175,448.5,179.5,453,185,453z M195,373 h60v60h-60V373z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M61,205h80c5.5,0,10-4.5,10-10v-80c0-5.5-4.5-10-10-10H61c-5.5,0-10,4.5-10,10v80C51,200.5,55.5,205,61,205z M71,125h60v60 H71V125z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M61,327h80c5.5,0,10-4.5,10-10v-80c0-5.5-4.5-10-10-10H61c-5.5,0-10,4.5-10,10v80C51,322.5,55.5,327,61,327z M71,247h60v60 H71V247z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M185,327h80c5.5,0,10-4.5,10-10v-80c0-5.5-4.5-10-10-10h-80c-5.5,0-10,4.5-10,10v80C175,322.5,179.5,327,185,327z M195,247 h60v60h-60V247z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M185,205h80c5.5,0,10-4.5,10-10v-80c0-5.5-4.5-10-10-10h-80c-5.5,0-10,4.5-10,10v80C175,200.5,179.5,205,185,205z M195,125 h60v60h-60V125z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M309,451h80c5.5,0,10-4.5,10-10v-80c0-5.5-4.5-10-10-10h-80c-5.5,0-10,4.5-10,10v80C299,446.5,303.5,451,309,451z M319,371 h60v60h-60V371z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M309,325h80c5.5,0,10-4.5,10-10v-80c0-5.5-4.5-10-10-10h-80c-5.5,0-10,4.5-10,10v80C299,320.5,303.5,325,309,325z M319,245 h60v60h-60V245z" />
+    <path
+        android:fillColor="#231F20"
+        android:pathData="M315,205h128c8.8,0,16-7.2,16-16V61c0-8.8-7.2-16-16-16H315c-8.8,0-16,7.2-16,16v128 C299,197.8,306.2,205,315,205z M319,64h120v121H319V64z" />
+</vector>

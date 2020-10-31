@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/top_corner"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/close_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_close_red"
+            android:layout_alignParentTop="true"
+
+            android:layout_margin="10sp"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:id="@+id/top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/close_im"
+            android:text="@string/address_detail"
+            style="@style/info_styles_black"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/top_tv"
+            style="@style/marginLR"
+            android:foregroundGravity="center"
+            android:layoutDirection="rtl"
+
+            android:layout_marginTop="20dp"
+
+            >
+
+            <EditText
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/name"
+            style="@style/marginLR"
+            android:foregroundGravity="center"
+            android:layoutDirection="rtl"
+
+
+            android:layout_marginTop="20dp"
+            >
+
+            <EditText
+                android:id="@+id/detail_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/no_btn"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_below="@+id/message_txt"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:layout_marginTop="17dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_toEndOf="@+id/yes_btn"-->
+            <!--android:background="@color/red_box"-->
+            <!--android:text="لغو"-->
+
+            <!--android:textColor="@color/white"-->
+            <!--android:textStyle="bold" />-->
+
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/detail"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/gradient_ok_btn"
+            android:text="تایید"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10sp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    tools:context=".SearchAddress.SearchAddress">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme">
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/default_margin"
+            android:background="@null"
+
+            android:onClick="back"
+            android:src="@drawable/ic_action_back"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/where_are_you"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        >
+        <ImageButton
+            android:id="@+id/clear_text"
+            android:layout_marginRight="-60dp"
+            style="?android:buttonBarButtonStyle"
+
+            android:src="@drawable/ic_action_clear"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginLeft="10sp"
+            android:elevation="100dp"
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/search_et"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/address_search"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:paddingLeft="60dp"
+            android:padding="15sp"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin"
+            android:backgroundTint="@color/text_light"
+
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="@dimen/default_margin"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progressbar_custom"
+        />
+
+
+</RelativeLayout>

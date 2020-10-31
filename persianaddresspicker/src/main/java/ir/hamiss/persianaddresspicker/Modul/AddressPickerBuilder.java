@@ -152,7 +152,7 @@ public class AddressPickerBuilder {
         set_extra(R.string.search_alley,search_alley,i);
         set_extra(R.string.search_alley_drawable,search_alley_drawable,i);
 
-        
+
 
 
         if (request_code == 0){

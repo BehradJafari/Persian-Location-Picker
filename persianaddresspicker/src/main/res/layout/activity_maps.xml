@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maps.MapsActivity"
+    android:background="@color/light_blue"
+    android:animateLayoutChanges="true"
+
+    >
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+
+    <!--<fragment-->
+    <!--android:id="@+id/place_autocomplete_fragment"-->
+    <!--android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--/>-->
+
+
+    <Button
+        android:id="@+id/request_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_on_map"
+        style="@style/marginLR"
+        android:background="@color/white"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/top_corner"
+        android:onClick="search"
+        android:drawableRight="@drawable/loupe"
+        android:gravity="center"
+        android:paddingRight="@dimen/default_margin"
+        android:drawablePadding="-24dp"
+        android:visibility="visible"
+
+
+
+        />
+
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/public_btn"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        style="@style/marginLR"
+        android:text="ثبت آدرس"
+        android:textColor="@color/white"
+
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/center_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center"
+        android:src="@drawable/location_placeholder"
+        android:onClick="set_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-28dp"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pin_p"
+        android:onClick="set_address"
+        android:visibility="invisible"
+
+        />
+</RelativeLayout>

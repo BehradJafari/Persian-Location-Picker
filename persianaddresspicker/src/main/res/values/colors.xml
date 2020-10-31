@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB090B</color>
+    <color name="colorPrimaryDark">#A21516</color>
+    <color name="colorAccent">#EB090B</color>
+
+
+    <color name="white">#ffffff</color>
+
+    <color name="texts">#484c4f</color>
+    <color name="yellow">#FFD700</color>
+    <color name="red">#e50000</color>
+    <color name="green_box">#059112</color>
+    <color name="red_box">#bb0024</color>
+    <color name="light_blue">#0A81F3</color>
+
+    <color name="melo_green">#51bbaa</color>
+
+    <color name="color_red1">#D94E53</color>
+
+    <color name="white_light">#A6FFFFFF</color>
+
+    <color name="text">#414141</color>
+
+    <color name="text_light">#B0727171</color>
+
+
+    <color name="black">#000000</color>
+
+    <color name="melo_primary">#8FEB090B</color>
+    <color name="favorite_back">#CCCCCC</color>
+    <color name="favorite_back_sel">#F0EFEF</color>
+    <color name="order_back">#E6E6E6</color>
+
+
+    </resources>

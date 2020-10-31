@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="480"
+    android:viewportHeight="480">
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#666666"
+        android:strokeWidth="3"
+        android:pathData="M 240.4 15.4 C 364.664068712 15.4 465.4 116.135931288 465.4 240.4 C 465.4 364.664068712 364.664068712 465.4 240.4 465.4 C 116.135931288 465.4 15.4 364.664068712 15.4 240.4 C 15.4 116.135931288 116.135931288 15.4 240.4 15.4 Z" />
+    <path
+        android:fillColor="#999999"
+        android:strokeColor="#666666"
+        android:strokeWidth="2"
+        android:strokeMiterLimit="10"
+        android:pathData="M298,388.9H184.9c-5.7,0-10.5-4.2-10.5-9.3s4.8-9.3,10.5-9.3H298c5.7,0,10.5,4.2,10.5,9.3 C308.2,384.7,303.7,388.9,298,388.9z" />
+    <path
+        android:fillColor="#999999"
+        android:strokeColor="#666666"
+        android:strokeWidth="2"
+        android:strokeMiterLimit="10"
+        android:pathData="M241.3,388.9c-5.7,0-10.5-4.2-10.5-9.3v-76.5c0-5.1,4.8-9.3,10.5-9.3s10.5,4.2,10.5,9.3v76.5 C251.8,384.7,247,388.9,241.3,388.9z" />
+    <path
+        android:fillColor="#999999"
+        android:strokeColor="#666666"
+        android:strokeWidth="2"
+        android:strokeMiterLimit="10"
+        android:pathData="M241.9,254.8h-1.2c-30.9,0-56.1-22.5-56.1-50.4v-88.8c0-27.9,25.2-50.4,56.1-50.4h1.2 c30.9,0,56.1,22.5,56.1,50.4v88.8C298,232.3,272.8,254.8,241.9,254.8z" />
+    <path
+        android:fillColor="#999999"
+        android:strokeColor="#666666"
+        android:strokeWidth="2"
+        android:strokeMiterLimit="10"
+        android:pathData="M241.9,307h-1.2c-26.1,0-50.4-9-69-25.5c-18.3-16.5-28.5-38.4-28.5-61.8c0-5.1,4.8-9.3,10.5-9.3 s10.5,4.2,10.5,9.3c0,18.3,8.1,35.7,22.5,48.6c14.4,12.9,33.6,20.1,54.3,20.1h1.2c20.4,0,39.6-7.2,54.3-20.1 c14.4-12.9,22.5-30.3,22.5-48.6c0-5.1,4.8-9.3,10.5-9.3s10.5,4.2,10.5,9.3c0,23.4-10.2,45.3-28.5,61.8 C292.3,298,268,307,241.9,307z" />
+</vector>
