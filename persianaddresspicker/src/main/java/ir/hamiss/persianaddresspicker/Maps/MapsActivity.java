@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +18,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.ApiException;
@@ -37,30 +37,21 @@ import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.patloew.rxlocation.RxLocation;
-
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
-import ir.hamiss.persianaddresspicker.G;
-import ir.hamiss.persianaddresspicker.Maps.MapPresenter;
+import ir.hamiss.persianaddresspicker.GLOBAL;
 import ir.hamiss.persianaddresspicker.Modul.AlertDialogAddress;
 import ir.hamiss.persianaddresspicker.Modul.SearchItem;
 import ir.hamiss.persianaddresspicker.R;
@@ -543,11 +534,11 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.C
 
             ) {
 
-                G.toast(empty_field);
+                GLOBAL.toast(empty_field);
             } else {
 
                 if (enable_info && dialogAddress.detail_et.getText().toString().trim().isEmpty()) {
-                    G.toast(empty_field);
+                    GLOBAL.toast(empty_field);
 
                     return;
                 }

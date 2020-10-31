@@ -23,7 +23,7 @@ import android.widget.Toast;
 /**
  * Created by behrad on 9/6/2017.
  */
-public class G extends Application  {
+public class GLOBAL extends Application  {
 
     //permissions
 

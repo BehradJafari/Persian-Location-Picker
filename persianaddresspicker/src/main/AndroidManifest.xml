@@ -12,7 +12,7 @@
 
     <application
 
-        android:name=".G"
+        android:name=".GLOBAL"
         >
 
 

@@ -8,10 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import ir.hamiss.persianaddresspicker.G;
 import ir.hamiss.persianaddresspicker.Modul.AddressPickerBuilder;
 import ir.hamiss.persianaddresspicker.Modul.SearchItem;
-import ir.hamiss.persianaddresspicker.Modul.SearchLocation;
 
 public class MainActivity extends AppCompatActivity {
 

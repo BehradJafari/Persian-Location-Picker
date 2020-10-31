@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 
-import ir.hamiss.persianaddresspicker.G;
+import ir.hamiss.persianaddresspicker.GLOBAL;
 import ir.hamiss.persianaddresspicker.Maps.MapsActivity;
 import ir.hamiss.persianaddresspicker.R;
 
@@ -165,24 +165,24 @@ public class AddressPickerBuilder {
 
     private void set_extra(int string , String put,Intent i){
         if (put!=null){
-            i.putExtra(G.context.getString(string),put);
+            i.putExtra(GLOBAL.context.getString(string),put);
         }
     }
     private void set_extra(int string , int put,Intent i){
 
-            i.putExtra(G.context.getString(string),put);
+            i.putExtra(GLOBAL.context.getString(string),put);
 
 
     }
 
     private void set_extra(int string , double put,Intent i){
 
-        i.putExtra(G.context.getString(string),put);
+        i.putExtra(GLOBAL.context.getString(string),put);
     }
 
     private void set_extra(int string , boolean put,Intent i){
 
-        i.putExtra(G.context.getString(string),put);
+        i.putExtra(GLOBAL.context.getString(string),put);
     }
 
 

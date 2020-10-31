@@ -10,12 +10,9 @@ package ir.hamiss.persianaddresspicker.Network.API;
 import java.util.concurrent.TimeUnit;
 
 
-import ir.hamiss.persianaddresspicker.G;
-import ir.hamiss.persianaddresspicker.Network.API.APIClient;
+import ir.hamiss.persianaddresspicker.GLOBAL;
 import ir.hamiss.persianaddresspicker.R;
-import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
-import okhttp3.Request;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -68,7 +65,7 @@ public class APIService {
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient.build())
 
-                    .baseUrl(G.context.getString(R.string.server));
+                    .baseUrl(GLOBAL.context.getString(R.string.server));
 
 
 

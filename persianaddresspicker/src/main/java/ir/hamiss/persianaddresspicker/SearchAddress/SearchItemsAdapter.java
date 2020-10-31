@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,7 +20,7 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
 
-import ir.hamiss.persianaddresspicker.G;
+import ir.hamiss.persianaddresspicker.GLOBAL;
 import ir.hamiss.persianaddresspicker.Modul.SearchItem;
 import ir.hamiss.persianaddresspicker.R;
 
@@ -62,7 +61,7 @@ public class SearchItemsAdapter extends RecyclerView.Adapter<SearchItemsAdapter.
     public SearchItemsAdapter(Context context) {
         this.context = context;
 
-        width = G.screenWidth(1,1);
+        width = GLOBAL.screenWidth(1,1);
 
 
     }
