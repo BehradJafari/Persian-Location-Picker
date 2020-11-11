@@ -72,9 +72,60 @@ Example usage
 
 ```
 
+get result in your activity 
+```java
+
+@Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==REQUEST_ADDRESS){
+            if (resultCode==RESULT_OK){
+                if (data!=null) {
+                    Bundle extras = data.getExtras();
+                    if (extras!=null) {
+
+                        SearchItem loc = (SearchItem) extras.get(getString(ir.hamiss.persianaddresspicker.R.string.location_searched));
+
+                       //do your staff with loc methods
+
+
+                    }
+                }
+            }
+        }
+
+```
+# methods
+| method | Description |
+| --- | --- |
+| setDrawable_src | location picker icon in GoogleMap setter |
+| setEnable_info | Show second edittext for get info of selected address |
+| setHint_title | set title edittext (first edittext ) hint |
+| setHint_info | set info edittext (second edittext ) hint |
+| setDialog_string | get more detail dialog title setter |
+| setNeshan_api_key | set your api_key that you get from neshan |
+| setRequest_code | handle for onActivityResult method |
+| setSearch_alley | open search alley activty  button text setter  |
+| setSearch_alley_drawable | open search alley activty  button drawble setter |
+| setStart_latitude | start lat for map and search area for alley searching (default is tehran's lat) | 
+| setStart_longitude | start lon for map and search area for alley searching (default is tehran's lon) | 
+| setZoom_map | set default zoom in map  |
+
+
+
+
+
+
 # Hamiss 
 visit our website :
 [Hamiss.ir](https://www.hamiss.ir "Hamiss's Homepage")
 
 
 ![alt text](https://hamiss.ir/img/bg-img/logo.png "Logo Title Text 1")
+
+# Finto 
+visit our website :
+[finto.ir](https://www.finto.ir "finto's Homepage")
+
+
+![alt text](https://startupforum.ir/images/cdn/2019/01/40.png )
